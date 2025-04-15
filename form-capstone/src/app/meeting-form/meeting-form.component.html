@@ -27,14 +27,15 @@
         </div>
     </div>
     <!-- Meeting List -->
-    <div class="card mt-5" style="width: 18rem;">
+    <div class="card mt-5 mb-5" style="width: 18rem;">
         <div class="card-header">
             Meeting Schedule
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item" *ngFor="let meetings of meetingList">
-                <p>{{meetings.topic}}</p>
-                <p>{{meetings.date}}</p>
+                <p><strong>Meeting Topic:</strong> {{meetings.topic}}</p>
+                <p><strong>Number of people:</strong> {{meetings.numPeople}}</p>
+                <p><strong>Meeting Date:</strong> {{meetings.date}}</p>
             </li>
         </ul>
     </div>

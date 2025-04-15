@@ -1,14 +1,14 @@
 CREATE TABLE client (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     name TEXT NOT NULL, 
-    email TEXT NOT NULL,
+    email TEXT NOT NULL UNIQUE,
     address TEXT,
-    password NOT NULL,
+    password TEXT NOT NULL,
 )
 
 CREATE TABLE meeting (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     topic TEXT NOT NULL, 
-    numPeople TINYINT,
+    numPeople INT NOT NULL,
     date DATETIME NOT NULL,
 )
