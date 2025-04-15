@@ -48,12 +48,17 @@
     </div>
 
     <!-- Client list -->
-    <div class="card mt-5" style="width: 18rem;">
+    <div class="card mt-5 mb-5" style="width: 18rem;">
         <div class="card-header">
             Client List
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item" *ngFor="let clients of clientList">{{clients.name}}</li>
+            <li class="list-group-item" *ngFor="let clients of clientList">
+                <p><strong>Client Name:</strong> {{clients.name}}</p>
+                <p><strong>Client Email:</strong> {{clients.email}}</p>
+                <p><strong>Client Address:</strong> {{clients.address}}</p>
+                <p><strong>Password:</strong> {{clients.password}}</p>
+            </li>
         </ul>
     </div>
 </div>

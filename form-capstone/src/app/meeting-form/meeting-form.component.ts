@@ -18,7 +18,7 @@ export class MeetingFormComponent {
       date: "2025-06-01T08:30"
     },
     { id: 2,
-      topic: `Fire Gary`,
+      topic: `Promote Gary`,
       numPeople: 2,
       date: "2025-06-02T08:30"
     }
